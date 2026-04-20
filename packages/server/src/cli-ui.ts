@@ -84,7 +84,9 @@ export function formatRelativeTime(isoDate: string): string {
 /** ANSI-aware padEnd — strips escape sequences for length calculation */
 export function padEnd(s: string, len: number): string {
   const visible = s
+    // eslint-disable-next-line no-control-regex
     .replace(/\x1b\[[0-9;]*m/g, '')
+    // eslint-disable-next-line no-control-regex
     .replace(/\x1b\]8;;[^\x07]*\x07/g, '')
   return s + ' '.repeat(Math.max(0, len - visible.length))
 }

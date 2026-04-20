@@ -24,6 +24,7 @@ function isTaskNotification(message: UserTextMessage): boolean {
 
 /** Strip ANSI escape sequences for display */
 function stripAnsi(text: string): string {
+  // eslint-disable-next-line no-control-regex
   return text.replace(/\x1b\[[0-9;]*m/g, '')
 }
 
