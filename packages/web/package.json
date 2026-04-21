@@ -1,5 +1,5 @@
 {
-  "name": "@cclx/web",
+  "name": "@ccsight/web",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "vite --port 3210"
   },
   "dependencies": {
-    "@cclx/shared": "workspace:*",
+    "@ccsight/shared": "workspace:*",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router": "^7.14.1",

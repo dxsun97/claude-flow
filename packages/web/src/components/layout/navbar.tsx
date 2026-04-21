@@ -15,7 +15,7 @@ export function Navbar() {
       <div className="flex items-center justify-between h-14 px-6">
         <div className="flex items-center gap-4 sm:gap-8">
           <NavLink to="/" className="text-base font-semibold tracking-tight">
-            CCLX
+            CCSight
           </NavLink>
           <nav className="flex items-center gap-1">
             {links.map(({ to, label, icon: Icon, end }) => (

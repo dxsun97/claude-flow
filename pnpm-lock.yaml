@@ -38,7 +38,7 @@ importers:
 
   packages/server:
     dependencies:
-      '@cclx/shared':
+      '@ccsight/shared':
         specifier: workspace:*
         version: link:../shared
     devDependencies:
@@ -60,7 +60,7 @@ importers:
 
   packages/web:
     dependencies:
-      '@cclx/shared':
+      '@ccsight/shared':
         specifier: workspace:*
         version: link:../shared
       react:

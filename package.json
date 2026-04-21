@@ -1,10 +1,10 @@
 {
-  "name": "cclx",
+  "name": "ccsight",
   "version": "0.1.0",
   "description": "Dashboard for visualizing Claude Code session data",
   "type": "module",
   "bin": {
-    "cclx": "packages/server/dist/cli.js"
+    "ccsight": "packages/server/dist/cli.js"
   },
   "files": [
     "packages/server/dist/",
@@ -13,12 +13,12 @@
   ],
   "scripts": {
     "dev": "pnpm run --parallel -r dev",
-    "dev:web": "pnpm --filter @cclx/web dev",
-    "dev:server": "pnpm --filter @cclx/server dev",
+    "dev:web": "pnpm --filter @ccsight/web dev",
+    "dev:server": "pnpm --filter @ccsight/server dev",
     "build": "pnpm run -r build",
-    "build:shared": "pnpm --filter @cclx/shared build",
-    "build:server": "pnpm --filter @cclx/server build",
-    "build:web": "pnpm --filter @cclx/web build",
+    "build:shared": "pnpm --filter @ccsight/shared build",
+    "build:server": "pnpm --filter @ccsight/server build",
+    "build:web": "pnpm --filter @ccsight/web build",
     "typecheck": "tsc -b",
     "lint": "eslint .",
     "format": "prettier --write .",

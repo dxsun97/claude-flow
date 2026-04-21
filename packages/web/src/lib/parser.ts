@@ -1,4 +1,4 @@
-export { parseJsonl } from '@cclx/shared'
+export { parseJsonl } from '@ccsight/shared'
 
 export async function readFileAsText(file: File): Promise<string> {
   return new Promise((resolve, reject) => {

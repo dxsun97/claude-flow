@@ -6,7 +6,7 @@ import type {
 } from '@/types/session'
 import type { SubagentInfo } from '@/store/session-store'
 
-export { formatTokenCount, formatDuration } from '@cclx/shared'
+export { formatTokenCount, formatDuration } from '@ccsight/shared'
 
 export function computeAnalytics(session: SessionData): SessionAnalytics {
   const toolStatsMap = new Map<string, ToolStats>()

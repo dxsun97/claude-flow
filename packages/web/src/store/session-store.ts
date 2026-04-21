@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import type { SessionData, SessionAnalytics, RawMessage } from '@/types/session'
 import type { DashboardStats } from '@/types/dashboard'
-import type { DataSource, ProjectInfo } from '@cclx/shared'
+import type { DataSource, ProjectInfo } from '@ccsight/shared'
 import { parseJsonl } from '@/lib/parser'
 import { buildSession } from '@/lib/thread-builder'
 import { computeAnalytics } from '@/lib/analytics'

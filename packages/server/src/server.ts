@@ -8,7 +8,7 @@ import type {
   ProjectInfo,
   SessionInfo,
   DashboardStats,
-} from '@cclx/shared'
+} from '@ccsight/shared'
 
 // --- Native HTTP utilities ---
 
@@ -812,6 +812,6 @@ const isDirectRun =
 
 if (isDirectRun) {
   startServer().then(({ port }) => {
-    console.log(`CCLX API running at http://localhost:${port}`)
+    console.log(`CCSight API running at http://localhost:${port}`)
   })
 }

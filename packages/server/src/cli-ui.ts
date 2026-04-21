@@ -2,7 +2,7 @@
 // Zero dependencies. Respects NO_COLOR and non-TTY environments.
 
 import { spawn } from 'child_process'
-import { formatTokenCount, formatBytes } from '@cclx/shared'
+import { formatTokenCount, formatBytes } from '@ccsight/shared'
 
 export { formatTokenCount, formatBytes }
 
@@ -62,7 +62,7 @@ export function createSpinner(message: string) {
 
 export function printBanner(version: string) {
   console.log()
-  console.log(`  ${bold('cclx')} ${dim(`v${version}`)}`)
+  console.log(`  ${bold('ccsight')} ${dim(`v${version}`)}`)
   console.log(`  ${dim('Dashboard for Claude Code sessions')}`)
   console.log()
 }

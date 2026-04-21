@@ -3,7 +3,7 @@
 
 import fs from 'fs'
 import os from 'os'
-import type { ProjectInfo } from '@cclx/shared'
+import type { ProjectInfo } from '@ccsight/shared'
 import {
   loadConfig,
   scanSource,
@@ -143,7 +143,7 @@ export function statsCommand() {
 
 export function configCommand(options: { showPath: boolean; reset: boolean }) {
   if (options.showPath) {
-    // Raw path for scripting: $EDITOR $(cclx config --path)
+    // Raw path for scripting: $EDITOR $(ccsight config --path)
     console.log(CONFIG_PATH)
     return
   }

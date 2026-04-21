@@ -1,1 +1,1 @@
-export * from '@cclx/shared'
+export * from '@ccsight/shared'

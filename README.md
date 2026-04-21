@@ -1,18 +1,18 @@
-# CCLX
+# CCSight
 
 A dashboard for visualizing Claude Code session data. Browse sessions, view conversation timelines, analyze token usage, inspect tool calls, and stream live sessions.
 
 ## Quick Start
 
 ```
-npx cclx
+npx ccsight
 ```
 
 Or install globally:
 
 ```
-npm install -g cclx
-cclx
+npm install -g ccsight
+ccsight
 ```
 
 Opens at http://localhost:3179 automatically.
@@ -29,47 +29,47 @@ Opens at http://localhost:3179 automatically.
 
 ## CLI Usage
 
-### `cclx` / `cclx serve`
+### `ccsight` / `ccsight serve`
 
 Start the dashboard server (default command).
 
 ```
-cclx                   # Start with defaults
-cclx --port 8080       # Custom port (default: 3179)
-cclx --no-open         # Don't auto-open browser
+ccsight                   # Start with defaults
+ccsight --port 8080       # Custom port (default: 3179)
+ccsight --no-open         # Don't auto-open browser
 ```
 
-### `cclx sessions` / `cclx ls`
+### `ccsight sessions` / `ccsight ls`
 
 List recent sessions.
 
 ```
-cclx sessions
+ccsight sessions
 ```
 
-### `cclx stats`
+### `ccsight stats`
 
 Show token usage summary.
 
 ```
-cclx stats
+ccsight stats
 ```
 
-### `cclx config`
+### `ccsight config`
 
 Manage configuration.
 
 ```
-cclx config            # Show current config
-cclx config --path     # Print config file path
-cclx config --reset    # Reset config to defaults
+ccsight config            # Show current config
+ccsight config --path     # Print config file path
+ccsight config --reset    # Reset config to defaults
 ```
 
 ### General
 
 ```
-cclx --help            # Show help
-cclx --version         # Show version
+ccsight --help            # Show help
+ccsight --version         # Show version
 ```
 
 ## Configuration
@@ -114,9 +114,9 @@ pnpm start
 ```
 claude-flow/
   packages/
-    shared/    @cclx/shared   - Shared types and utilities
-    server/    @cclx/server   - Node.js HTTP server + CLI
-    web/       @cclx/web      - React frontend (Vite)
+    shared/    @ccsight/shared   - Shared types and utilities
+    server/    @ccsight/server   - Node.js HTTP server + CLI
+    web/       @ccsight/web      - React frontend (Vite)
 ```
 
 ## Tech Stack
