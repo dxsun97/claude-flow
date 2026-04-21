@@ -74,7 +74,7 @@ ccsight --version         # Show version
 
 ## Configuration
 
-Data sources are configured through the Settings page in the UI, or by editing `~/.claude-flow.json`.
+Data sources are configured through the Settings page in the UI, or by editing `~/.ccsight.json`.
 
 By default, sessions are read from `~/.claude/projects/` (the standard Claude Code session directory).
 
@@ -94,8 +94,8 @@ By default, sessions are read from `~/.claude/projects/` (the standard Claude Co
 ## Development
 
 ```
-git clone https://github.com/dxsun97/claude-flow.git
-cd claude-flow
+git clone https://github.com/dxsun97/ccsight.git
+cd ccsight
 pnpm install
 pnpm run dev
 ```
@@ -112,7 +112,7 @@ pnpm start
 ## Project Structure
 
 ```
-claude-flow/
+ccsight/
   packages/
     shared/    @ccsight/shared   - Shared types and utilities
     server/    @ccsight/server   - Node.js HTTP server + CLI

@@ -155,7 +155,7 @@ function serveStatic(
 
 // --- Config ---
 
-export const CONFIG_PATH = path.join(os.homedir(), '.claude-flow.json')
+export const CONFIG_PATH = path.join(os.homedir(), '.ccsight.json')
 
 export const DEFAULT_SOURCES: DataSource[] = [
   {
