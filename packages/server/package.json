@@ -8,7 +8,7 @@
     "ccsight": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json --noEmit && esbuild src/cli.ts --bundle --platform=node --format=esm --target=es2023 --define:BUNDLED=true --outfile=dist/cli.js",
     "dev": "tsx src/server.ts"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.12.2",
+    "esbuild": "^0.25.0",
     "tsx": "^4.21.0",
     "typescript": "~6.0.3"
   }

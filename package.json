@@ -8,8 +8,7 @@
   },
   "files": [
     "packages/server/dist/",
-    "packages/web/dist/",
-    "packages/shared/dist/"
+    "packages/web/dist/"
   ],
   "scripts": {
     "dev": "pnpm run --parallel -r dev",

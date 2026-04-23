@@ -805,7 +805,8 @@ export function startServer(
 }
 
 // Auto-start when run directly (not imported by CLI)
-const isDirectRun =
+// @ts-expect-error BUNDLED is defined by esbuild at bundle time
+const isDirectRun = typeof BUNDLED === 'undefined' &&
   process.argv[1] &&
   path.resolve(process.argv[1]).replace(/\.ts$/, '') ===
     path.resolve(import.meta.filename).replace(/\.ts$/, '')
